@@ -1,0 +1,738 @@
+<?php
+	session_start();
+	$defaultAcct = "0xbd95DBD333778C462f4b493ABE6f68957Fc84886";
+	if(!isset($_GET["ref"]))
+	{
+		$_SESSION["spAccount"] = $defaultAcct;
+	}elseif(empty($_GET["ref"]))
+	{
+		$_SESSION["spAccount"] = $defaultAcct;
+	}elseif($_GET["ref"] === ""){
+		$_SESSION["spAccount"] = $defaultAcct;
+	}else{
+		$_SESSION["spAccount"] = htmlspecialchars($_GET["ref"]);
+	}
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta property="og:image" content="logo.png">
+  <meta property="og:description" content="Mine on Polygon Network 0.6% Daily">
+
+  <title> Solution Mining </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="logo.png" rel="icon">
+  <link href="logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/toastr.min.css" rel="stylesheet" >
+</head>
+
+<body>
+<a href="#">
+  <video autoplay loop muted style="width: 20px; height: 20px;">
+    <source src="" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</a>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div id="logo">
+      <a href="#"><img src="" alt="" style="width: 2; height: 2;"></a>
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="index.html">Regna</a></h1>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">DashBoard</a></li>
+		 <!-- <li><a class="nav-link scrollto" href="#about">MP Token</a></li> -->
+          <li class="dropdown"><a href="#"><span>Links</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="https://t.me/solution_web3">Telegram</a></li>
+              <li><a href="https://youtu.be/pv3mpE55X2I">Youtube Review</a></li>
+               <li><a href="https://nowpayments.io/payment/?iid=5818180791">Presales $SLT</a></li>
+              <li><a href="">Market Trade (Coming Soon)</a></li>
+              <li><a href="">Dapp Wallet (Coming Soon)</a></li>
+            </ul>
+          </li>
+		  <li class="dropdown"><a href="#"><span>Documents</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="SolutionDefi.pdf">PDF</a></li>
+              <li><a href="#">Whitepaper</a></li>
+			  <li><a href="#">RoadMap</a></li> -->
+          </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="https://polygonscan.com/address/0xc99F9767dd2A4be698732431f09bc5dFe8aeE1B3" target="_blank">Verified Contract</a></li>
+		  <li><a class="nav-link scrollto" href="javascript:;" id="connect-wallet">Connect</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+    </header><!-- End Header -->
+
+    <div>
+    </div>
+    <!-- promo section end -->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero">
+  <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+  <h1>Welcome to SOLUTION MINING</h1>
+<h2>The Future of Sustainable Mining</h2>
+<p>Unlock innovative solutions and maximize your potential with cutting-edge technology.</p>
+    <div style="text-align: center; margin-top: 2px;">
+      <img src="up.png" alt="Mining Rig" style="max-width: 2; height: 2;">
+    </div>
+</section><!-- End Hero Section -->
+  
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row about-container">
+
+          <div class="col-lg-6 content order-lg-1 order-2">
+			<h2 class="title">Features</h2>
+			<div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bi bi-briefcase"></i></div>
+              <h4 class="title"><a href="">Low Risk Mining </a></h4>
+              <p class="description">Earn attractive rewards by mining on the platform. With its efficient Proof-of-Work or Proof-of-Stake consensus mechanism, users can actively participate in securing the network and earn valuable rewards in return.</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="150">
+              <div class="icon"><i class="bi bi-card-checklist"></i></div>
+              <h4 class="title"><a href="">Low Energy-Fee Transactions</a></h4>
+              <p class="description">Enjoy low energy costs on the mining platform, thanks to its optimized and efficient mining algorithms. By leveraging advanced mining technology, users can mine, stake, and manage their assets without worrying about high operational costs typically associated with traditional mining methods.</p>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bi bi-binoculars"></i></div>
+              <h4 class="title"><a href="">Security and Reliability</a></h4>
+              <p class="description">Rest assured of the security and reliability of your mined assets. The platform employs robust security measures and undergoes regular audits to ensure the integrity of the mining infrastructure, providing users with peace of mind and confidence in their investments.</p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 order-lg-2 order-1" data-aos="fade-left" data-aos-delay="100">
+				<div class="responsive-video">
+					<iframe src="solutionmining_presentation.mp4" frameborder="0" allowfullscreen></iframe>
+				</div>
+          </div>
+		  
+        </div>
+		</div>
+		</div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">Select Your Mining Rigs</h3>
+          <p class="section-description">Browse our range of mining rigs, each designed to offer a total revenue of up to 140%.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+          <div class="box">
+      <div class="icon">
+        <a href="#">
+          <img src="case.png" alt="Icon" class="circle-icon" />
+        </a>
+      </div>
+      <h4 class="title">
+              <h4 class="title" ><a href="">Modern Rig</a></h4>
+              <p class="description" align = "left">Revenue: 
+			  <span class="description2" > 126.0%</span></p>
+			  <p class="description" align = "left">Days:
+			  <span class="description2"> 210</span></p>
+			  <p class="description" align = "left">Daily:
+			  <span class="description2"> 0.6%</span></p>
+			  <p class="description" align = "left">Min. Deposit:
+			  <span class="description2">1</span></p>
+			  <p class="description" align = "left">Max Deposit:
+			  <span class="description2">10,000</span></p>
+			  <form class="form">
+    			<label class="form-label">POL Amount: </label> 
+    			<input type="number" class="form-control text-center" id="txtamount1" name="txtamount1" placeholder="1">
+    			<div class="box-footer">
+					<a class="services-btn align-middle" id="deposit1">Mine POL</a>				
+				</div> 
+				</form>		  
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+          <div class="box">
+      <div class="icon">
+        <a href="#">
+          <img src="case.png" alt="Icon" class="circle-icon" />
+        </a>
+      </div>
+      <h4 class="title">
+              <h4 class="title"><a href="">Advance Rig</a></h4>
+               <p c<p class="description" align = "left">Revenue: 
+			  <span class="description2" > 144.0%</span></p>
+			  <p class="description" align = "left">Days:
+			  <span class="description2"> 240</span></p>
+			  <p class="description" align = "left">Daily:
+			  <span class="description2"> 0.6%</span></p>
+			  <p class="description" align = "left">Min:
+			  <span class="description2">1</span></p>
+			  <p class="description" align = "left">Max:
+			  <span class="description2">10,000</span></p>
+			  <form class="form">
+    			<label class="form-label">POL Amount: </label> 
+    			<input type="number" class="form-control text-center" id="txtamount2" name="txtamount2" placeholder="1">
+    			<div class="box-footer">
+					<a class="services-btn align-middle" id="deposit2">Mine POL</a>				
+				</div> 
+				</form>
+			</div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+          <div class="box">
+      <div class="icon">
+        <a href="#">
+          <img src="case.png" alt="Icon" class="circle-icon" />
+        </a>
+      </div>
+      <h4 class="title">
+              <h4 class="title"><a href="">Expert Rig</a></h4>
+              <p class="description" align = "left">Revenue: 
+			  <span class="description2" > 162.0%</span></p>
+			  <p class="description" align = "left">Days:
+			  <span class="description2"> 270</span></p>
+			  <p class="description" align = "left">Daily:
+			  <span class="description2"> 0.6%</span></p>
+			  <p class="description" align = "left">Min:
+			  <span class="description2">1</span></p>
+			  <p class="description" align = "left">Max:
+			  <span class="description2">10,000</span></p>
+				<form class="form">
+    			<label class="form-label">POL Amount: </label> 
+    			<input type="number" class="form-control text-center" id="txtamount3" name="txtamount3" placeholder="1">
+    			<div class="box-footer">
+					<a class="services-btn align-middle" id="deposit3">Mine POL</a>				
+				</div> 
+				</form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+	<!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+	    <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">Dashboard</h3>
+          <p class="section-description">View your real-time withdrawable balance along with a detailed list of your referrals and their corresponding rewards. </p>
+        </div>
+		<div class="container" data-aos="fade-up">
+
+        <ul class="nav nav-tabs row gy-4 d-flex">
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+              <i class="bi bi-binoculars color-cyan"></i>
+              <h4>Your Wallet</h4>
+            </a>
+          </li><!-- End Tab 1 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+              <i class="bi bi-box-seam color-indigo"></i>
+              <h4>Referral Links</h4>
+            </a>
+          </li><!-- End Tab 2 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+              <i class="bi bi-brightness-high color-teal"></i>
+              <h4>Levels</h4>
+            </a>
+          </li><!-- End Tab 3 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+              <i class="bi bi-command color-red"></i>
+              <h4>Transactions</h4>
+            </a>
+          </li><!-- End Tab 4 Nav -->
+
+          
+        </ul>
+
+        <div class="tab-content">
+
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+                <h3>Income: <span id="my-bnb">0.00 POL</span></h3>
+				<form class="form">
+    				<div class="box-footer">
+					<button type="button" class="waves-effect waves-light btn btn-primary mb-5" id="Withdraw"><i class="fa fa-check"></i> Withdraw - 1 POL Minimum </button>
+				    </div>
+					</form>
+				
+                <h4>Revenue Summary: </h4>
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Deposits: <span id="my-investments">0.00 POL</span></li>
+                  <li><i class="bi bi-check-circle-fill"></i> Total Withdrawn: <span id="my-harvests">0.00 POL</span></li>
+				  <li><i class="bi bi-check-circle-fill"></i> Referral Income: <span id="my-drb">0.00 POL</span></li>
+				  <li><i class="bi bi-check-circle-fill"></i> Wallet Balance: <span id="my-balance">0.00 POL</span></li>
+				  <li><i class="bi bi-check-circle-fill"></i> Token Balance: $SLT <span id="token-balance">0.00 </span></li>
+              </div>
+   
+              
+              <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img src="mining3.gif" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content 1 -->
+
+          <div class="tab-pane" id="tab-2">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Referral Statistics</h3>
+				<p>Contract Address: 
+				<input type="text" class="form-control" value="0xc99F9767dd2A4be698732431f09bc5dFe8aeE1B3">
+				<a href="https://polygonscan.com/address/0xc99F9767dd2A4be698732431f09bc5dFe8aeE1B3" class="waves-effect waves-light btn btn-primary mb-5" target="_blank"><i class="fa fa-check"></i> OPEN IN POLYSCAN</a>
+                <p style="margin-top:5px;">Sponsor Wallet Address: <span id="sp-address"></span></p>
+			
+			
+				<form class="form">
+    				<label class="form-label">Your Link: </label> 
+    				<input type="text" class="form-control" id="my-referral" value="">
+    				
+    				<div class="box-footer">
+					<br>
+					<button type="button" class="waves-effect waves-light btn btn-primary mb-5" id="copy-link"><i class="fa fa-check"></i> COPY LINK</button>
+					
+					</div> 
+					</form>
+			
+				
+                </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-2.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content 2 -->
+
+          <div class="tab-pane" id="tab-3">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Levels</h3>
+				<div class="col-lg-4 col-md-6">
+                <ul>
+                  <li><i class="bi bi-check-circle-fill"></i> Level 1 (2%): <span id="referralsCountAtLevel1">0</span></li>
+                  <li><i class="bi bi-check-circle-fill"></i> Level 2 (3%): <span id="referralsCountAtLevel2">0</span></li>
+                </ul>
+				</div>
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-3.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content 3 -->
+
+          <div class="tab-pane" id="tab-4">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Latest Contract Transactions:</h3>
+               
+				<form class="form">
+    				<label class="form-label">Enter Contract Address: </label> 
+    				<input type="text" class="form-control" id="walletAddress" value="">
+    				
+    				<div class="box-footer">
+					<br>
+					<button type="button" class="waves-effect waves-light btn btn-primary mb-5" id="copy-link"><i class="fa fa-check"></i> SHOW</button>
+				
+					</div> 
+					</form>
+				
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-4.svg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content 4 -->
+
+          
+        </div>
+
+      </div>
+	  </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content px-xl-5">
+              <h3>Frequently Asked <strong>Questions</strong></h3>
+              <p>
+                General questions on the basics of transacting in  Solution Mining are answered here.
+              </p>
+            </div>
+
+            <div class="accordion accordion-flush px-xl-5" id="faqlist">
+
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    How it Works?
+                  </button>
+                </h3>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                  Earn yield income on every block mined on Polygon (approximately every 3 seconds), with payouts from 180 to 200 days. Enjoy a minimum of 0.7% daily yield for 200 days, with the potential for short-term yields of up to 0.7% daily for 180 days. Safe, transparent, and decentralized with a never-ending mining yield to earn from.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    How to start?
+                  </button>
+                </h3>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                  For desktop users, you can use the MetaMask extension on Chrome. Simply add the Polygon network to your MetaMask extension, then visit polvault.site and click on "Connect."  
+For mobile users, download the MetaMask, Trust Wallet, or SafePal app from your app store. After installation, create a new POL wallet or import an existing one. Then, open the website in your DApp browser, select the Polygon network, and connect to the DApp.  
+Once connected to the DApp, you'll be able to stake, withdraw, and refer others using your referral link.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    What are the referral levels?
+                  </button>
+                </h3>
+                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Users can refer an unlimited number of individuals across any level, with earnings paid up to 2 levels, starting at 2% and reaching a total of up to 3%, offering unrestricted earning potential.  
+No business thrives without a strong team, and at SOLUTION MINING, each referral acts as a team member contributing to the project's success.  
+We offer unlimited potential for referral income up to 2 levels, with each level capable of having unlimited referrals.  
+SOLUTION MINING provides Level-1 earnings at 2% and Level-2 earnings at 3%.
+				  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Automated Mining Payouts
+                  </button>
+                </h3>
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                  Fast Asset Withdrawals.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("");'>&nbsp;</div>
+        </div>
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+ 
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+<h2>TOKEN EXCHANGE -  </h2>
+   <iframe src="https://nowpayments.io/embeds/payment-widget?iid=5818180791" width="410" height="696" frameborder="0" scrolling="no" style="overflow-y: hidden;"> Can't load widget </iframe>
+<a href="https://nowpayments.io/payment/?iid=5818180791" target="_blank" rel="noreferrer noopener"> <img src="https://nowpayments.io/images/embeds/payment-button-white.svg" alt="Cryptocurrency & Bitcoin payment button by NOWPayments"> </a>
+    <script defer type='text/javascript' src='https://changenow.io/embeds/exchange-widget/v2/stepper-connector.js'></script>
+    <div class="container">
+      <div class="copyright">© 2025 Solution Mining  </h5> All rights reserved.
+      </div>
+      
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  
+  <script src="assets/js/toastr.min.js"></script>
+	
+  <script src="assets/maticjs/web3.js"></script>
+  <script src="assets/maticjs/abi.js"></script>
+  <script src="assets/maticjs/dapp2.js"></script>
+  
+  <script type="text/javascript">
+	$(document).ready(function()
+    {
+        
+	<?php
+            if(	$_SESSION["spAccount"] != ''){
+                echo "spAccount = '".$_SESSION["spAccount"]."';";    
+            }else{
+                echo "spAccount = '0xbd95DBD333778C462f4b493ABE6f68957Fc84886';"; 
+            }
+        ?>
+        
+        
+        $('#sp-address').html(spAccount); 
+    
+    });
+
+	$(function() {
+     
+		
+		$('#deposit1').click(function(ev) {
+    	    var amt = $("#txtamount1");
+            
+            if(spAccount == 'Invalid Wallet!' || spAccount == '')
+            {
+                toastr.warning("Invalid Sponsor Wallet Address!","",{"timeOut": "3000","positionClass": "toast-top-right"});
+				return false;
+		    }
+            
+			if(isNaN(parseFloat(amt.val().trim())))
+			{
+				$("#txtamount1").focus();
+				toastr.warning("Invalid Amount!","",{"timeOut": "3000","positionClass": "toast-top-right"});
+				return false;
+			}	
+
+			if(amt.val() == NaN)
+			{
+				$("#txtamount1").focus();					
+				toastr.warning("Invalid Amount!","",{"timeOut": "3000","positionClass": "toast-top-right"});
+				return false;
+			}	
+
+    		if(amt.val() < 1)
+			{
+				$("#txtamount1").focus();				
+				toastr.warning("Minimum is 1 POL!","",{"timeOut": "3000","positionClass": "toast-top-right"});
+            	return false;
+			}
+			
+			if(amt.val() > 10000)
+			{
+				$("#txtamount1").focus();				
+				toastr.warning("Maximum is 10,000 POL!","",{"timeOut": "3000","positionClass": "toast-top-right"});
+            	return false;
+			}
+        /*
+            if(amt.val() > myBalance)
+			{
+				$("#txtamount1").focus();				
+				toastr.warning("Not enough balance!","",{"timeOut": "3000","positionClass": "toast-top-right"});
+				return false;
+			}
+        */
+
+			deposit1();
+			ev.preventDefault();
+    	});
+    	
+    
+        $('#deposit2').click(function(ev) {
+    	    var amt = $("#txtamount2");
+            
+            if(spAccount == 'Invalid Wallet!' || spAccount == '')
+            {
+                toastr.warning("Invalid Sponsor Wallet Address!","",{"timeOut": "3000","positionClass": "toast-top-right"});
+				return false;
+		    }
+            
+			if(isNaN(parseFloat(amt.val().trim())))
+			{
+				$("#txtamount2").focus();
+				toastr.warning("Invalid Amount!","",{"timeOut": "3000","positionClass": "toast-top-right"});
+				return false;
+			}	
+
+			if(amt.val() == NaN)
+			{
+				$("#txtamount2").focus();					
+				toastr.warning("Invalid Amount!","",{"timeOut": "3000","positionClass": "toast-top-right"});
+				return false;
+			}	
+
+    		if(amt.val() < 1)
+			{
+				$("#txtamount2").focus();				
+				toastr.warning("Minimum is 1 POL!","",{"timeOut": "3000","positionClass": "toast-top-right"});
+            	return false;
+			}
+			
+			if(amt.val() > 100000)
+			{
+				$("#txtamount2").focus();				
+				toastr.warning("Maximum is 10,000 POL!","",{"timeOut": "3000","positionClass": "toast-top-right"});
+            	return false;
+			}
+        /*
+            if(amt.val() > myBalance)
+			{
+				$("#txtamount2").focus();				
+				toastr.warning("Not enough balance!","",{"timeOut": "3000","positionClass": "toast-top-right"});
+				return false;
+			}
+        */
+			deposit2();
+			ev.preventDefault();
+    	});
+    	
+    	
+    	$('#deposit3').click(function(ev) {
+    	    var amt = $("#txtamount3");
+            
+            if(spAccount == 'Invalid Wallet!' || spAccount == '')
+            {
+                toastr.warning("Invalid Sponsor Wallet!","",{"timeOut": "3000","positionClass": "toast-top-right"});
+				return false;
+		    }
+            
+			if(isNaN(parseFloat(amt.val().trim())))
+			{
+				$("#txtamount3").focus();
+				toastr.warning("Invalid Amount!","",{"timeOut": "3000","positionClass": "toast-top-right"});
+				return false;
+			}	
+
+			if(amt.val() == NaN)
+			{
+				$("#txtamount3").focus();					
+				toastr.warning("Invalid Amount!","",{"timeOut": "3000","positionClass": "toast-top-right"});
+				return false;
+			}	
+
+    		if(amt.val() < 1)
+			{
+				$("#txtamount3").focus();				
+				toastr.warning("Minimum is 1 POL!","",{"timeOut": "3000","positionClass": "toast-top-right"});
+            	return false;
+			}
+			
+			if(amt.val() > 10,000)
+			{
+				$("#txtamount3").focus();				
+				toastr.warning("Maximum is 10,000 POL!","",{"timeOut": "3000","positionClass": "toast-top-right"});
+            	return false;
+			}
+        /*
+            if(amt.val() > myBalance)
+			{
+				$("#txtamount3").focus();				
+				toastr.warning("Not enough balance!","",{"timeOut": "3000","positionClass": "toast-top-right"});
+				return false;
+			}
+        */
+
+			deposit3();
+			ev.preventDefault();
+    	});
+    	
+$('#Withdraw').click(function(ev) {
+		   	
+		    collectDividends();
+			
+			ev.preventDefault();
+		});
+        
+        
+        $('#copy-link').click(function(ev) {
+			copy_text($('#my-referral').val());
+			ev.preventDefault();
+	    });
+
+	});
+    
+    function copy_text(text){		
+	    // Create a dummy input to copy the string array inside it
+		var dummy = document.createElement("input");
+		// Add it to the document
+		document.body.appendChild(dummy);
+		// Set its ID
+		dummy.setAttribute("id", "dummy_id");
+		// Output the array into it
+		document.getElementById("dummy_id").value=text;
+		// Select it
+		dummy.select();		
+		document.execCommand("copy");
+		// Remove it as its not needed anymore
+		document.body.removeChild(dummy);
+		//alert('COPIED['+$('#my-referral').val()+']');
+		toastr.success($('#my-referral').html(),"",{"timeOut": "3000","positionClass": "toast-top-right"});
+		return false;
+	}
+    </script> 
+    
+</div>
+   
+   
+ 
+
+
+</body>
+
+</html>
